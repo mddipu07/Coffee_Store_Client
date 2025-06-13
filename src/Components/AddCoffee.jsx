@@ -11,7 +11,7 @@ const AddCoffee = () => {
     console.log(formData.entries());
 
 
-    fetch('http://localhost:3000/coffees',{
+    fetch('https://coffee-store-server-theta-hazel.vercel.app/coffees',{
       method: 'POST',
       headers:{
         'content-type': 'application/json'

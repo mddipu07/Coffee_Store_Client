@@ -20,7 +20,7 @@ Swal.fire({
   console.log(result.isConfirmed)
   if (result.isConfirmed) {
 
-   fetch(`http://localhost:3000/coffees/${_id}`,{
+   fetch(`https://coffee-store-server-theta-hazel.vercel.app/coffees/${_id}`,{
     method:'DELETE',
    }).then(res => res.json())
    .then(data =>{

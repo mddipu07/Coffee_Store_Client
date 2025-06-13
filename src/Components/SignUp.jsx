@@ -32,7 +32,7 @@ const SignUp = () => {
 
 
             // save Profile info in the database
-            fetch('http://localhost:3000/users',{
+            fetch('https://coffee-store-server-theta-hazel.vercel.app/users',{
                 method:"POST",
                 headers:{
                     'content-type': 'application/json'
@@ -69,7 +69,7 @@ const SignUp = () => {
           <label className="label">Address</label>
           <input type="text" name="address" className="input" placeholder="Your Address" />
           <label className="label">Phone</label>
-          <input type="text" name="phone" className="input" placeholder="Photo URL" />
+          <input type="text" name="phone" className="input" placeholder="Phone" />
           <label className="label">Photo URL</label>
           <input type="text" name="PhotoUrl" className="input" placeholder="Email" />
           <label className="label">Email</label>
@@ -77,7 +77,7 @@ const SignUp = () => {
           <label className="label">Password</label>
           <input type="password" name="password" className="input" placeholder="Password" />
           <div><a className="link link-hover">Forgot password?</a></div>
-          <button className="btn btn-neutral mt-4">Login</button>
+          <button className="btn btn-neutral mt-4">SignUp</button>
         </form>
       </div>
     </div>

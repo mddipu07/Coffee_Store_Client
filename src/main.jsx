@@ -25,7 +25,7 @@ const router = createBrowserRouter([
     children:[
       {
         index: true,
-        loader: () => fetch('http://localhost:3000/coffees'),
+        loader: () => fetch('https://coffee-store-server-theta-hazel.vercel.app/coffees'),
         Component:Home
       },
       {
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path:'updateCoffee/:id',
-        loader: ({params}) => fetch(`http://localhost:3000/coffees/${params.id}`),
+        loader: ({params}) => fetch(`https://coffee-store-server-theta-hazel.vercel.app/coffees/${params.id}`),
         element:<UpdateCoffee></UpdateCoffee>
       },
       {
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path:'users',
-        loader: () => fetch('http://localhost:3000/users'),
+        loader: () => fetch('https://coffee-store-server-theta-hazel.vercel.app/users'),
         Component:Users
       }
     ]
